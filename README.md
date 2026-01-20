@@ -1,4 +1,4 @@
-# 📝 LeetCodePrep
+# 📝 Placement_Prep
 
 Welcome to **LeetCodePrep** – my personal repository for **practicing algorithms and data structures** by solving LeetCode problems.  
 
