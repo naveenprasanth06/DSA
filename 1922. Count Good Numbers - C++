@@ -1,0 +1,22 @@
+class Solution {
+public:
+    static const long long MOD = 1e9 + 7;
+    long long power(long long base, long long exp) {
+    long long result = 1;
+    while (exp > 0) {
+        if(exp % 2 == 1) {
+            result = (result * base) % MOD;
+        }
+        base = (base * base) % MOD;
+        exp /= 2;
+    }
+    return result;
+    }
+    int countGoodNumbers(long long n) {
+    long long even_position = (n + 1) / 2; 
+    long long odd_position  = n / 2;
+    long long even_part     = power(5, even_position);
+    long long odd_part      = power(4, odd_position);
+    return (even_part * odd_part) % MOD;
+    }
+};
