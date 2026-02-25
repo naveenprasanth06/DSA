@@ -1,0 +1,19 @@
+struct ListNode* oddEvenList(struct ListNode* head) {
+    if(head==NULL){
+        return NULL;
+    }
+    else{
+        struct ListNode *odd = head;
+        struct ListNode *even = head->next;
+        struct ListNode *evenhead = NULL;
+        evenhead=even;
+        while(even!=NULL && even->next!=NULL){
+            odd->next=odd->next->next;
+            odd=odd->next;
+            even->next=even->next->next;
+            even=even->next;
+         }
+         odd->next=evenhead;
+         return head;
+    }
+}
