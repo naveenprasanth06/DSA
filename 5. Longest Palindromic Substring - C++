@@ -1,1 +1,30 @@
-
+class Solution {
+public:
+    string longestPalindrome(string s) {
+        int n = s.length();
+        if(n <= 1) return s;
+        int maxLength = 1;
+        string result = s.substr(0, 1);
+        for(int i = 0; i < n; i++) {
+            for(int j = i + maxLength; j < n + 1; j++) {
+                string temp = s.substr(i, j - i);
+                if(isPalindrome(temp)) {
+                    maxLength = j - 1;
+                    result = temp;
+                }
+            }
+        }
+        return result;
+    }
+    bool isPalindrome(string str) {
+        int left = 0;
+        int right = str.length() - 1;
+        while(left < right) {
+            if(str[left] != str[right])
+            return false;
+            left++;
+            right--;
+        }
+        return true;
+    }
+};
