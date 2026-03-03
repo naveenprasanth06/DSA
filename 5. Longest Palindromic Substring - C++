@@ -3,28 +3,23 @@ public:
     string longestPalindrome(string s) {
         int n = s.length();
         if(n <= 1) return s;
-        int maxLength = 1;
-        string result = s.substr(0, 1);
+        int start = 0, maxLength = 1;
         for(int i = 0; i < n; i++) {
-            for(int j = i + maxLength; j < n + 1; j++) {
-                string temp = s.substr(i, j - i);
-                if(isPalindrome(temp)) {
-                    maxLength = j - 1;
-                    result = temp;
-                }
-            }
+            expandAroundCenter(s, i, i, start, maxLength);
+            expandAroundCenter(s, i, i + 1, start, maxLength);
         }
-        return result;
+        return s.substr(start, maxLength);
     }
-    bool isPalindrome(string str) {
-        int left = 0;
-        int right = str.length() - 1;
-        while(left < right) {
-            if(str[left] != str[right])
-            return false;
-            left++;
-            right--;
+private:
+    void expandAroundCenter(const string &s, int left, int right, int &start, int &maxLength) {
+        while(left >= 0 && right < s.length() && s[left] == s[right]) {
+            left--;
+            right++;
         }
-        return true;
+        int len = right - left - 1;
+        if(len > maxLength) {
+            maxLength = len;
+            start = left + 1;
+        }
     }
 };
