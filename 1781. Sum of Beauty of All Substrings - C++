@@ -1,0 +1,21 @@
+class Solution {
+public:
+    int beautySum(string s) {
+        int n = s.length();
+        int sum = 0;
+        for(int i = 0; i < n; i++) {
+            unordered_map<char, int> freq;
+            for(int j = i; j < n; j++) {
+                freq[s[j]]++;
+                int max_i = INT_MIN; 
+                int min_i = INT_MAX;
+                for(auto it : freq) {
+                    min_i = min(min_i, it.second);
+                    max_i = max(max_i, it.second);
+                }
+                sum += (max_i - min_i);
+            }
+        }
+        return sum;
+    }
+};
