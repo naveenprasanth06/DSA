@@ -1,0 +1,30 @@
+class Solution {
+  public:
+    int missingNum(vector<int>& arr) {
+        int n =arr.size() + 1;
+        int xor1 = 0;
+        int xor2 = 0;
+        for(int i = 0; i <= n; i++) {
+            xor1 = xor1 ^ i;
+        }
+            for(int i = 0; i < arr.size(); i++) {
+            xor2 = xor2 ^ arr[i];
+        }
+        return xor1 ^ xor2;
+    }
+};
+
+==========================================================
+
+class Solution {
+  public:
+    int missingNum(vector<int>& arr) {
+        int n = arr.size() + 1;  
+        long long expectedSum = (long long)n * (n + 1) / 2;
+        long long actualSum = 0;
+        for(int i = 0; i < arr.size(); i++) {
+            actualSum += arr[i];
+        }
+        return expectedSum - actualSum;
+    }
+};
