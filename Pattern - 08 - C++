@@ -2,8 +2,8 @@
 using namespace std;
 class Solution {
 public:
-    // Function to print Pattern 7
-    void pattern7(int N) {
+    // Function to print Pattern 8
+    void pattern8(int N) {
         // Outer loop for rows
         for (int i = 0; i < N; i++) {
             // Print leading spaces (N - i - 1 spaces)
@@ -26,6 +26,6 @@ public:
 int main() {
     Solution sol;
     int N = 5;
-    sol.pattern7(N);
+    sol.pattern8(N);
     return 0;
 }
