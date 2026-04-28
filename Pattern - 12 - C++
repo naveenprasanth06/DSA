@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-void pattern11(int N) {
+void pattern12(int N) {
     // First row starts by printing a single 1.
     int start = 1;
     // Outer loop for the number of rows
@@ -22,6 +22,6 @@ void pattern11(int N) {
 int main() {
     // The size of the square pattern is N
     int N = 5;
-    pattern11(N); // Print the pattern
+    pattern12(N); // Print the pattern
     return 0;
 }
