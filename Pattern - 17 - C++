@@ -3,7 +3,7 @@ using namespace std;
 class Solution {
 public:
     // Function to print Pattern 18
-    void pattern18(int N) {
+    void pattern17(int N) {
         // Loop for each row
         for (int i = 0; i < N; i++) {
             // Print characters from ('A' + N - 1 - i) to ('A' + N - 1)
@@ -21,6 +21,6 @@ int main() {
     // Define N
     int N = 5;
     // Call pattern function
-    sol.pattern18(N);
+    sol.pattern17(N);
     return 0;
 }
