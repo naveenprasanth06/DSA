@@ -2,7 +2,7 @@
 using namespace std;
 class Solution {
 public:
-    void pattern2(int N) {
+    void pattern4(int N) {
         for (int i = 0; i <= N; i++) {
             for (int j = 1; j <= i; j++) {
                 cout << j << " ";
@@ -14,6 +14,6 @@ public:
 int main() {
     Solution sol;
     int N = 5;
-    sol.pattern2(N);
+    sol.pattern4(N);
     return 0;
 }
