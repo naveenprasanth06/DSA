@@ -1,28 +1,62 @@
-# 📝 Placement_Prep
+# 📝 Placement Prep
 
-Welcome to **LeetCodePrep** – my personal repository for **practicing algorithms and data structures** by solving LeetCode problems.  
+Welcome to **Placement Prep** – my personal repository for solving and documenting problems from the **A2Z DSA Sheet** to strengthen my Data Structures and Algorithms knowledge and prepare for technical interviews.
 
-This repo is designed to:  
-- 🚀 Improve **problem-solving skills**  
-- 💡 Learn and apply **coding patterns**  
-- 🎯 Prepare for **technical interviews**  
+This repository contains my solutions, approaches, and learning notes as I progress through the complete A2Z DSA roadmap.
 
-## 🐾 What’s Inside
-- **Arrays, Strings, Linked Lists, Trees & Graphs, Dynamic Programming**, and more  
-- Solutions written in **C++**, **Python**, and sometimes **Java**  
-- Clear comments explaining **logic and approach** for each problem  
+## 🚀 Purpose
 
-## ⚡ How to Use
-- Browse through problem folders  
-- Check out solutions and explanations  
-- Use them as reference or practice, but try solving yourself first!  
+- Improve problem-solving skills
+- Master Data Structures and Algorithms
+- Build consistency in coding practice
+- Prepare for campus placements and technical interviews
+- Track my progress through the A2Z DSA Sheet
 
-## 🤝 Contribution
-Feel free to:  
-- Suggest improvements  
-- Add solutions in other languages  
-- Report bugs or issues  
+## 📚 What's Included
 
-> This is my **personal coding journey**, organized for learning, practicing, and sharing knowledge.  
+- Solutions to problems from the A2Z DSA Sheet
+- Optimized approaches and implementations
+- Clean and readable code
+- Explanations and comments wherever necessary
+
+## 💻 Languages Used
+
+- C++
+- Python
+- Java (occasionally)
+
+## 🎯 Learning Path
+
+The repository covers:
+
+- Basic Mathematics
+- Arrays
+- Strings
+- Searching & Sorting
+- Recursion & Backtracking
+- Linked Lists
+- Stacks & Queues
+- Binary Trees
+- Binary Search Trees
+- Heaps
+- Greedy Algorithms
+- Graphs
+- Dynamic Programming
+- Tries
+- Advanced DSA Concepts
+
+## 📈 Progress Tracking
+
+This repository is continuously updated as I solve more problems from the A2Z DSA Sheet and improve my understanding of algorithms and data structures.
+
+## 🤝 Contributions
+
+Suggestions, optimizations, and alternative approaches are always welcome.
+
+## ⭐ About
+
+This repository represents my journey toward becoming a better problem solver and software engineer through consistent DSA practice and interview preparation.
 
 ---
+
+**Keep Learning • Keep Coding • Keep Growing 🚀**
